@@ -1,0 +1,59 @@
+body {
+    margin: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+    align-items: center;
+    background-color: gray;
+}
+
+.ani1{
+    max-width: 500px;
+    margin-bottom: 50px;
+    animation: slide-in 2s;
+    animation-iteration-count: infinite;
+    color: blue;
+}
+@keyframes slide-in{
+    0% {
+        opacity: 0%;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+.ani2{
+    max-width: 500px;
+    margin-bottom: 50px;
+    animation: slide-in 2s;
+    animation-timeline: scroll();
+    color: brown;
+}
+
+
+.ani3{
+    max-width: 500px;
+    margin-bottom: 50px;
+    animation: slide-in 2s;
+    animation-timeline: view();
+    animation-range: contain;
+    color: chartreuse;
+}
+
+
+.ani4{
+    max-width: 500px;
+    margin-bottom: 50px;
+    animation: aumentar linear both;
+    animation-timeline: scroll() ;
+    color: cyan;
+}
+@keyframes aumentar{
+    from{
+        scale: .5;
+    }
+}
